@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="images/icons/about.png" />
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+     <!-- Menu Part -->
+
+     <div class="menu">
+                                                
+        <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="Feedback.html">Feed Back</a></li>
+        </ul>
+    
+    </div>
+    <div class="fullpage">
+        <div class="body1">
+            <div class="package">
+                <div class="right">
+                    <div class="space"></div>
+                    <div class="box">
+                        <div class="imgtag">
+
+                        </div>
+                        <div class="name">
+                            <h1>Nagi Pragalathan.N</h1>
+                        </div>
+                        <hr style="height: 1px;width: 299px;background: antiquewhite;border: 1px solid bisque;">
+                        <h2>FullStack Developer</h2>
+                        <div class="qr">
+                            
+                        </div>
+                        <div class="clg">
+                            <h3>Student</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="left">
+                        
+                    <h1 style="margin-top: 78px;font-size: 54px;">HI<span style="color: red;font-stretch: ultra-expanded;font-style: oblique;">!</span></h1>
+                    <h1 style="padding: 29px;display: flex;flex-direction: column;align-content: center;align-items: center;justify-content: center;">Here's Who I am & what i do</h1>
+                    <div class="btn">
+                        <button class="resume">Resume</button>
+                        <button class="projcets" onclick="projects()">Projects</button>
+                    </div>
+
+                    <h1>Skills</h1>
+                    <div class="lang" id="skill"></div>
+
+                    <h1>Certificates</h1>
+                    <div class="cer">
+                        <h2>DIGITAL MARKETING</h2>
+                        <h2>Python</h2>
+                        <h2>Html course</h2>
+                    </div>
+                    <h1>Achievements</h1>
+                    <div class="cer1">
+                        <div class="top"><h2 style="text-decoration: underline;">Web Design <br><h5>( 04 / 2021 - Present )<h5><h6>Achieved 2nd Place in Coding Club</h6></h2></div>
+                        <div class="top"><h2 style="text-decoration: underline;">Tech Demo <br><h5>( 11 / 2021 - Present )<h5><h6>Achieved 1nd Place in Coding Club</h6></h2></div>
+                    </div>
+                    <h1>About Me</h1>
+                    <hr style="height: 80%;width: 299px;background: antiquewhite;border: 1px solid bisque;">
+                    
+                    <p class="p">Efficient Computer Engineering major currently attending Jays Engineering College . Aiming to leverage proven language , problem solving , and teamwork skills to skills to successfully.Frequently praised as hard working by my peers , I can be relied upon to help your company achieve its goals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        langs = ["Python","Html","Css","Sqlite","Mysql","C","MIT Tool","Blender basics","2D Devalopment","3D Devalopment","Flask","Pygame","Java","Unity","Figma","Canva","Filmora","JavaScript","Tkinter","Swing","Vs code editer"]
+        per = [60,60,60,30,20,40,50,40,30,30,40,50,30,30,40,50,60,40,50,30,60] 
+        var skill = document.getElementById("skill");
+        var lang = "";
+        for(let i = 0;i<langs.length;i++){
+            lang = lang + "<div class='per'><div class='bar'>    <h3>"+per[i]+"%</h3>    <div class='inline'>        <div class='known' style='width: "+per[i]+"%;background-image: linear-gradient(32deg, #ff0081, transparent);height: 100%;border-radius: 16px;'></div>    </div></div><h2>"+langs[i]+"</h2> </div>"
+            console.log(langs[i],per[i])
+        }
+        var skill = document.getElementById("skill")
+        skill.innerHTML=lang;
+
+        function projects(){
+            document.location.replace("projects.html")
+        }
+    </script>
+    
+</body>
+</html>

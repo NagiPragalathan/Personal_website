@@ -1,0 +1,143 @@
+.myvideo{
+    position:fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+    filter: invert();
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    margin-left: -7px;
+    display: flex;
+    height: 64px;
+    margin-top: -77px;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 3;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+.list li{
+    height: 46px;
+    bottom: 0px;
+    width: 86px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.list li:hover{
+    background-color: #a1a4a7;
+    transition: 2s;
+    border-radius: 30px;
+}
+.list a:hover{
+    color: black;
+}
+.list a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+
+
+.body1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 77px;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    position: relative;
+}
+.pack{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.box{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 23px;
+    margin-left: 25px;
+    height: 375px;
+    box-shadow: 6px 6px 20px 0px #101010d9;
+    border-radius: 38px;
+    width: 262px;
+    border: 2px solid black;
+    background-color: #a7a9afd9;
+    transition: 2s;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.blur{
+    filter: blur(3mm);
+    transition: 1s ease-in-out;
+}
+.blur:hover{
+    filter: none;
+    transition: 1s;
+}
+.btn{
+    width: 90px;
+    background: linear-gradient(155deg, black, transparent);
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 52px;
+    transition: 1s;
+}
+.btn:hover{
+    transition: 1s;
+    background-color: antiquewhite;
+    color: black;
+}
+.para{
+    border: 2px solid;
+    color: #201616;
+    border-radius: 12px;
+    background-color: #ffffff73;
+    margin: 8px;
+    display: flex;
+    overflow-x: auto;
+    box-shadow: inset 0px 1px 20px 0px #00000091;
+    width: 232px;
+    height: 170px;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    position: absolute;
+    top: 1px;
+    width: 250px;
+    font-size: 27px;
+    margin-left: 21px;
+    transition: 2s ease-out;
+}

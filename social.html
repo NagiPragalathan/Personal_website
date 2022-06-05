@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links</title>
+    <link rel="shortcut icon" href="images/icons/social1.png" />
+    <link rel="stylesheet" href="css/social.css">
+</head>
+
+<body>
+    <!-- Menu Part -->
+    <div class="menu">
+                                                
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="Feedback.html">Feed Back</a></li>
+        </ul>
+    
+    </div>
+    <div class="total">
+        <div class="body1">
+            <video autoplay muted loop class="myVideo">
+                <source id="src" src="images/video2.mp4" type="video/mp4">
+            </video>
+            <div class="top">
+                <h1 style=" font-size: 45px;margin-bottom: 59px;background: linear-gradient(267deg, #0000006b, transparent); border-radius: 13px;"> <span style="color: #ff8a99;">Social</span> <span style="color: aliceblue;"> Links</span></h1>
+                            </div>
+            <div class="container" id="con">
+
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+    imgs = ["images/github.png","images/linkedin.gif","images/sololearn.webp","images/utube.jpg","images/fb.webp","images/instagram.jpg"]
+    socialPlt=["GitHub","LinkedIn","SoloLearn","YouTube","FaceBook","Instagram"]
+    detial =["<strong> Some of my Projects : </strong><ul style = 'margin-top:-10px'><li>ClassRoomTools</li><li>Train-Ticket-Registration</li><li>NotePad_Compiler</li><li>google-translator</li></ul>",
+            "Here the Linkdein Link <br> <strong> I am Available </strong> <ul><li>LinkedIn</li><li>Instagram</li><li>FaceBook</li><li>WhatsApp</li></ul>",
+            "Here the SoloLearn Link <br> <strong> uing this i am completeing many Course : </strong><ul><li>python</li><li>HTML</li><li>Css</li></ul>",
+            "Here the YouTube link <br> <Strong>Here's the Educational videos.<ul><li>Coding Vidos</li><li>Coding Shots</li></ul></Strong>",
+            "Here the FaceBook Link <br> <strong> I am Available </strong> <ul><li>LinkedIn</li><li>Instagram</li><li>FaceBook</li><li>WhatsApp</li>",
+            "Here the Instagram Link <br> <strong> I am Available </strong> <ul><li>LinkedIn</li><li>Instagram</li><li>FaceBook</li><li>WhatsApp</li>"]
+    link = ["https://github.com/NagiPragalathan/",
+            "https://www.linkedin.com/in/nagi-pragalathan-n-a03a55230",
+            "https://www.sololearn.com/Profile/18076530/?ref=app",
+            "https://youtube.com/channel/UCwqqgoHCYOo2n9bERHQMK7A",
+            "https://www.facebook.com/profile.php?id=100081414617956",
+            "https://instagram.com/mr_lazy_05?igshid=YmMyMTA2M2Y="]
+    var exit = document.getElementById("con");
+
+    var str ="<div class='box'>    <div class='img' style='position: absolute;border: 2px solid black;background-color: rgb(95 97 98 / 36%);width: 124px;background-image: url("+");height: 122px;border-radius: 70px;background-size: cover;'>    </div>    <h1 style='position: absolute;top: 109px;'>"+"</h1>    <div class='abs'>        <div class='con'>            <p>"+"</p>        </div>        <div class='btn'>            <button class='btn1'><a href='"+"'>Link</a></button>        </div>    </div></div>"
+    var string = " ";
+    for(let i=0;i<socialPlt.length;i++){
+        string = string + "<div class='box'>    <div class='img' style='position: absolute;border: 2px solid black;background-color: rgb(95 97 98 / 36%);width: 124px;background-image: url("+imgs[i]+");height: 122px;border-radius: 70px;background-size: cover;'>    </div>    <h1 style='position: absolute;top: 109px;'>"+socialPlt[i]+"</h1>    <div class='abs'>        <div class='con'>            <p>"+detial[i]+"</p>        </div>        <div class='btn'>            <button class='btn1'><a style ='text-decoration: none;color: white;' href='"+link[i]+"'>Link</a></button>        </div>    </div></div>"
+    }
+
+
+    document.getElementById("con").innerHTML+=string;
+
+    console.log(exit)
+
+
+</script>
+
+
+</body>
+</html>
